@@ -2,145 +2,242 @@
 
 <div align="center">
 
-<img src="assets/covid19_banner.gif" alt="Animated COVID-19 Data Analysis banner" width="100%"/>
+<img src="covid19_updated_banner.gif" alt="Animated COVID-19 data analysis banner" width="100%"/>
 
-### 📊 Explore the spread • compare countries • study outcomes • inspect intervention patterns
+### 📊 Explore the spread • Compare countries • Analyze outcomes • Study interventions
 
-![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
-![Pandas](https://img.shields.io/badge/Pandas-data%20analysis-150458?logo=pandas)
-![NumPy](https://img.shields.io/badge/NumPy-numerical%20computing-013243?logo=numpy)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-visualization-11557c)
-![Seaborn](https://img.shields.io/badge/Seaborn-statistical%20plots-4c78a8)
-![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)
-![Charts](https://img.shields.io/badge/Visualizations-39-ff69b4)
-![Rows](https://img.shields.io/badge/Dataset%20Rows-10%2C000-brightgreen)
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-013243?logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-11557c)
+![Seaborn](https://img.shields.io/badge/Seaborn-Statistical%20Visualization-4c78a8)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)
+![Rows](https://img.shields.io/badge/Rows-10%2C000-2ea44f)
+![Columns](https://img.shields.io/badge/Columns-16-6f42c1)
+![Plots](https://img.shields.io/badge/Visualizations-26-ff69b4)
 
 </div>
 
 ---
 
+## 🎥 Video Demo
+
+> **Add your project demonstration video link here.**
+
+🔗 **Demo Video:** `YOUR_VIDEO_LINK_HERE`
+
+<!-- Example:
+[▶️ Watch the COVID-19 Project Demo](https://your-video-link-here)
+-->
+
+---
+
 ## 🌟 Project Overview
 
-This project is a **COVID-19 data analysis and visualization notebook** built with **Python, Pandas, NumPy, Matplotlib, and Seaborn**.
+This project is an updated **COVID-19 Data Analysis and Visualization** notebook created with **Python, Pandas, NumPy, Matplotlib, and Seaborn**.
 
-The notebook moves through a complete exploratory workflow:
+The notebook follows a complete exploratory data-analysis workflow:
 
-> 📥 Load data → 🔎 Understand data → 🧹 Prepare data → 📈 Visualize → 🧠 Compare relationships → 🏛️ Study interventions → 📝 Summarize findings
+```text
+📥 Load Data
+    ↓
+🔎 Understand Data
+    ↓
+🧹 Prepare & Engineer Features
+    ↓
+📈 Visualize Trends
+    ↓
+🌍 Compare Countries & Regions
+    ↓
+🔗 Study Relationships
+    ↓
+🏛️ Analyze Government Intervention
+    ↓
+📝 Summarize the Dataset
+```
 
-The analysis covers **10 countries across 5 regions** and uses **10,000 records with 16 columns**.
+The updated project contains:
 
-### 🌎 Countries included
+- **10,000 rows**
+- **16 columns**
+- **10 countries**
+- **5 regions**
+- **26 plotted visualizations**
 
-| Region | Countries |
-|---|---|
-| 🌏 Asia | India, Japan |
-| 🌍 Europe | United Kingdom, Germany, France, Italy |
-| 🌎 North America | United States, Canada |
-| 🌎 South America | Brazil |
-| 🌊 Oceania | Australia |
-
-### 🧾 Data quality recorded in the notebook
-
-- **Rows:** 10,000
-- **Columns:** 16
-- **Missing values:** 0
-- **Duplicate rows:** 0
-- **Data types:** 11 integer columns, 2 floating-point columns, 3 string columns
-
-> ✅ The notebook therefore starts its analysis with a clean tabular dataset according to the checks it performs.
-
----
-
-## 🎯 Goals of the Project
-
-This notebook is designed to answer practical exploratory questions such as:
-
-- 📈 How do daily cases, recoveries, and deaths change over time?
-- 🌍 Which countries and regions have the largest cumulative case totals?
-- 👥 How do population size and case burden relate?
-- 💉 How does cumulative vaccination volume evolve?
-- ⚖️ How different are countries when cases are normalized per million people?
-- 🏛️ How are government intervention scores distributed?
-- 🔗 What relationships appear between cases, deaths, recoveries, intervention scores, and other numeric variables?
-- 🔮 What is the average percentage change in cases in the next month at different intervention levels?
+It focuses on daily COVID-19 activity, cumulative outcomes, vaccination progress, population-normalized cases, government intervention scores, distributions, correlations, and month-to-month case changes.
 
 ---
 
-## 🧰 Tools & Libraries
+# 🎯 Project Objectives
 
-The notebook imports:
+The project is designed to explore questions such as:
+
+- 📈 How do daily new cases, recoveries, and deaths change over time?
+- 🦠 How do cumulative cases grow across countries?
+- ⚰️ How do cumulative deaths compare?
+- 💉 How does cumulative vaccination volume change?
+- 🌍 Which countries have the highest total case counts?
+- 👥 How do population size and total cases relate?
+- 📏 Which countries have the highest cases per million people?
+- 🌎 Which region contributes the largest total number of cases?
+- 🔵 What relationship appears between daily new cases and daily new deaths?
+- 🏛️ How are cases per million distributed across intervention levels?
+- 📅 What happens to average cases in the **next month** at different intervention levels?
+
+---
+
+# 🧰 Technologies & Libraries
+
+The notebook uses:
 
 ```python
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-```
 
-The visualization styling is initialized with:
-
-```python
 sns.set_style('whitegrid')
 ```
 
+### 🐍 Main technologies
+
+| Technology | Use in project |
+|---|---|
+| 🐼 Pandas | Data loading, cleaning, grouping, aggregation, pivot tables |
+| 🔢 NumPy | Numerical operations |
+| 📊 Matplotlib | Core charts and plotting |
+| 🎨 Seaborn | Statistical and categorical visualizations |
+| 📓 Jupyter Notebook | Interactive analysis environment |
+
 ---
 
-## 📂 Dataset Structure
+# 📂 Project Structure
 
-The notebook loads:
+Recommended GitHub structure:
+
+```text
+COVID-19-Project/
+│
+├── 📓 Covid-19(1).ipynb
+├── 📄 COVID-19 Dataset.csv
+├── 📘 README.md
+└── 🎞️ covid19_updated_banner.gif
+```
+
+> ⚠️ The notebook expects the dataset file to be named **`COVID-19 Dataset.csv`** and available in the notebook's working directory.
+
+---
+
+# 📊 Dataset Overview
+
+The notebook loads the dataset using:
 
 ```python
 df = pd.read_csv('COVID-19 Dataset.csv')
 ```
 
-> ⚠️ **Important:** the notebook expects `COVID-19 Dataset.csv` to be available when it is run. The uploaded notebook itself does not include that CSV file.
+## 🌍 Countries
 
-### 🧬 Original columns
+The updated notebook contains these 10 countries:
 
-| Column | Purpose |
+| Region | Countries |
 |---|---|
-| `Date` | Observation date |
-| `Country` | Country name |
-| `Region` | Geographic region |
-| `Population` | Population used for normalization |
-| `New_Cases` | New cases reported for the observation |
-| `Cumulative_Cases` | Cumulative reported cases |
-| `New_Recovered` | New recoveries |
-| `Cumulative_Recovered` | Cumulative recoveries |
-| `New_Deaths` | New deaths |
-| `Cumulative_Deaths` | Cumulative deaths |
-| `Active_Cases` | Active cases |
-| `New_Vaccinations` | New vaccination doses |
-| `Cumulative_Vaccinations` | Cumulative vaccination doses |
-| `Government_Intervention_Score` | Government intervention score |
-| `Case_Fatality_Rate_Percent` | Case fatality rate (%) |
-| `Recovery_Rate_Percent` | Recovery rate (%) |
+| 🌎 North America | United States, Canada |
+| 🌏 Asia | India, Japan |
+| 🌎 South America | Brazil |
+| 🇪🇺 Europe | United Kingdom, Germany, France, Italy |
+| 🌊 Oceania | Australia |
+
+## 🗺️ Regions
+
+The five regions are:
+
+```text
+North America
+Asia
+South America
+Europe
+Oceania
+```
 
 ---
 
-## 🧹 Data Preparation
+# 🧬 Dataset Columns
 
-Before visualization, the notebook creates several derived fields.
+The notebook works with **16 original columns**:
 
-### 📅 Date conversion
+| Column | Description |
+|---|---|
+| `Date` | Daily observation date |
+| `Country` | Country name |
+| `Region` | Geographic region |
+| `Population` | Population used for normalization |
+| `New_Cases` | Newly reported cases |
+| `Cumulative_Cases` | Total accumulated cases |
+| `New_Recovered` | Newly reported recoveries |
+| `Cumulative_Recovered` | Total accumulated recoveries |
+| `New_Deaths` | Newly reported deaths |
+| `Cumulative_Deaths` | Total accumulated deaths |
+| `Active_Cases` | Active cases |
+| `New_Vaccinations` | Newly recorded vaccinations |
+| `Cumulative_Vaccinations` | Cumulative vaccination doses |
+| `Government_Intervention_Score` | Government intervention score |
+| `Case_Fatality_Rate_Percent` | Case fatality rate |
+| `Recovery_Rate_Percent` | Recovery rate |
+
+---
+
+# 🔍 Initial Data Understanding
+
+The notebook performs the following checks:
+
+```python
+print('Rows and columns:', df.shape)
+print(df.columns.tolist())
+df.info()
+df.describe()
+```
+
+### ✅ Data-quality checks
+
+The notebook records:
+
+- **Rows:** 10,000
+- **Columns:** 16
+- **Missing values:** 0
+- **Duplicate rows:** 0
+
+### 📏 Data types
+
+The dataset contains:
+
+- **11 integer columns**
+- **2 floating-point columns**
+- **3 string columns**
+
+---
+
+# 🧹 Data Preparation & Feature Engineering
+
+The notebook prepares the dataset before analysis.
+
+## 📅 1. Convert the date
 
 ```python
 df['Date'] = pd.to_datetime(df['Date'], format='%d-%m-%Y')
 ```
 
-The source date strings are converted into real datetime values so that time-based grouping and plotting work correctly.
+This converts the original date strings into real datetime values.
 
-### ↕️ Sorting
+## ↕️ 2. Sort the data
 
 ```python
 df = df.sort_values(['Country', 'Date']).reset_index(drop=True)
 ```
 
-The observations are ordered by country and date.
+The rows are sorted by country and date.
 
-### 🗓️ Time features
-
-The notebook creates:
+## 🗓️ 3. Create time features
 
 ```python
 df['Year'] = df['Date'].dt.year
@@ -148,27 +245,29 @@ df['Month'] = df['Date'].dt.month
 df['Year_Month'] = df['Date'].dt.strftime('%Y-%m')
 ```
 
-These fields support yearly and monthly comparisons.
+These fields make yearly and monthly analysis easier.
 
-### 👥 Cases per million
-
-```python
-df['Cases_per_Million'] = df['New_Cases'] / df['Population'] * 1000000
-```
-
-This converts daily new cases into a population-normalized measure.
-
-### ⚰️ Deaths per million
+## 👥 4. Calculate cases per million
 
 ```python
-df['Deaths_per_Million'] = df['New_Deaths'] / df['Population'] * 1000000
+df['Cases_per_Million'] = (
+    df['New_Cases'] / df['Population'] * 1000000
+)
 ```
 
-This creates a population-normalized daily death measure.
+This normalizes daily cases using population size.
 
-### 🏛️ Intervention levels
+## ⚰️ 5. Calculate deaths per million
 
-The government intervention score is transformed into three categorical levels:
+```python
+df['Deaths_per_Million'] = (
+    df['New_Deaths'] / df['Population'] * 1000000
+)
+```
+
+This creates a population-adjusted daily death measure.
+
+## 🏛️ 6. Create intervention categories
 
 ```python
 df['Intervention_Level'] = pd.cut(
@@ -178,598 +277,843 @@ df['Intervention_Level'] = pd.cut(
 )
 ```
 
-So the notebook uses:
+The fixed score bands are:
 
-| Score | Level |
+| Score | Category |
 |---:|---|
 | 0–30 | 🟢 Low |
 | 31–60 | 🟠 Medium |
 | 61–100 | 🔴 High |
 
-### 🧾 Final snapshot
-
-The notebook defines:
+## 📌 7. Select the final date
 
 ```python
 last_day = df[df['Date'] == df['Date'].max()]
 ```
 
-This `last_day` table is then used for final country and region comparisons.
+This creates a final-date snapshot used for country and regional comparisons.
 
 ---
 
-# 📊 Complete Visualization Guide
+# 📈 Visualization 1 — Line Charts
 
-The notebook contains **39 visualization outputs**. The sections below document every plot and what it is intended to show.
+The updated notebook contains **5 line-chart analyses**.
 
+## 1.1 📈 Daily new cases, recoveries and deaths
 
-## 📈 Line Charts
-
-### 5.1 — Daily new cases, recoveries and deaths
-
-Groups data by date and sums `New_Cases`, `New_Recovered`, and `New_Deaths` across all 10 countries. The three series are displayed as separate panels to compare daily movement.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-### 5.2 — Average daily new cases per month
-
-Computes the mean `New_Cases` for each country and `Year_Month`, then plots one line per country. Useful for comparing monthly intensity and seasonal/time-period differences.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-### 5.3 — Cumulative COVID-19 cases
-
-Uses `Cumulative_Cases` over time with country-specific lines. Shows how the accumulated case burden grows across countries.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-### 5.4 — Cumulative COVID-19 deaths
-
-Uses `Cumulative_Deaths` over time with country-specific lines. Highlights the growth of the cumulative death count.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-### 5.5 — Cumulative vaccine doses
-
-Uses `Cumulative_Vaccinations` over time by country, giving a visual view of vaccine-dose accumulation.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-
-## 📊 Bar Charts
-
-### 6.1 — Total COVID-19 cases by country
-
-Uses the final-date snapshot (`last_day`) and compares `Cumulative_Cases` across countries.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-### 6.2 — Total deaths by country
-
-Uses `Cumulative_Deaths` from the final snapshot to compare total recorded deaths.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-### 6.3 — Total recoveries by country
-
-Horizontal bar chart of `Cumulative_Recovered` from the final snapshot, making country labels easy to read.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-### 6.4 — Total cases per million people
-
-Normalizes final cumulative cases by population: `Cumulative_Cases / Population × 1,000,000`. This improves cross-country comparability by population size.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-### 6.5 — Total cases by region
-
-Sums final `Cumulative_Cases` by `Region`. Recorded regional totals: Europe 87,247,093; North America 85,269,626; Asia 68,922,043; South America 47,133,678; Oceania 6,939,510.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-### 6.6 — Outcome of all cases by country
-
-Stacked bars compare `Cumulative_Recovered`, `Active_Cases`, and `Cumulative_Deaths` for each country.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-
-## 🥧 Pie Charts
-
-### 7.1 — Share of total cases by region
-
-Shows each region's proportion of the combined final cumulative-case total.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-### 7.2 — Share of total deaths by country
-
-Shows how the combined final cumulative deaths are distributed among the 10 countries.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-### 7.3 — What happened to all the cases?
-
-Combines final totals for recovered, active, and deaths into one outcome view. The death slice is emphasized with an explode effect.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-
-## 🔵 Scatter Plots
-
-### 8.1 — Daily new cases vs. daily new deaths
-
-Plots `New_Cases` against `New_Deaths`, colored by region, to inspect their relationship across daily observations.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-### 8.2 — Population vs. total cases
-
-Compares final population with final cumulative cases for the 10 countries. Country hue distinguishes individual observations.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-### 8.3 — Government intervention score vs. cases per million
-
-Uses a random sample of 2,000 rows and compares `Government_Intervention_Score` with daily `Cases_per_Million`. Transparency helps reveal the point cloud.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-### 8.4 — Intervention score vs. cases per million with trend line
-
-Repeats the sampled comparison with a regression line to make the overall linear trend easier to inspect.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-
-## 📦 Histograms
-
-### 9.1 — Distribution of daily new cases
-
-Histogram of `New_Cases` using 40 bins, showing the spread of daily case counts across the dataset.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-### 9.2 — Distribution of case fatality rate
-
-Histogram of `Case_Fatality_Rate_Percent` with a KDE overlay, showing the shape and concentration of fatality-rate values.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-
-## 📦 Box Plots
-
-### 10.1 — Daily new cases by country
-
-Compares the distribution, median, spread, and potential outliers of `New_Cases` for each country.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-### 10.2 — Case fatality rate by country
-
-Compares `Case_Fatality_Rate_Percent` distributions across countries.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-### 10.3 — Cases per million by intervention level
-
-Groups daily `Cases_per_Million` by the engineered `Low`, `Medium`, and `High` intervention categories.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-
-## 🎻 Violin Plots
-
-### 11.1 — Case fatality rate by region
-
-Shows the distribution and density of `Case_Fatality_Rate_Percent` within each region.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-### 11.2 — Recovery rate by region
-
-Shows the distribution and density of `Recovery_Rate_Percent` within each region.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-### 11.3 — Government intervention score by country
-
-Compares the distribution of intervention scores for each country.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-
-## 🔥 Heatmaps
-
-### 12.1 — Correlation between the main columns
-
-Displays a correlation matrix for `New_Cases`, `New_Recovered`, `New_Deaths`, `Active_Cases`, `New_Vaccinations`, `Government_Intervention_Score`, `Case_Fatality_Rate_Percent`, and `Recovery_Rate_Percent`.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-### 12.2 — Average daily cases per million — Country vs Year
-
-Pivot table of mean `Cases_per_Million` by country and year, rendered as an annotated heatmap.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-### 12.3 — Average daily cases per million — Country vs Month
-
-Pivot table of mean `Cases_per_Million` by country and `Year_Month`, visualized across the full monthly timeline.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-### 12.4 — Average government intervention score — Country vs Year
-
-Pivot table of average intervention score by country and year, with annotations to show the numeric averages.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-
-## 🏛️ Government Intervention Analysis
-
-### 13.1 — Average cases per million at each intervention level
-
-Groups `Cases_per_Million` by the predefined `Low`, `Medium`, and `High` intervention levels. Recorded means: Low = **249.41**, Medium = **243.34**, High = **229.93** cases per million.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-### 13.2a — Average change in cases next month (%)
-
-Builds monthly country-level averages, shifts `New_Cases` to create `Cases_Next_Month`, and computes percentage change. Intervention score is split into three equal-frequency groups using `pd.qcut`. Notebook output: Low = +28.73%, Medium = +5.56%, High = −13.18% (mean change).
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-### 13.2b — Change in cases next month (%) — box plot
-
-Shows the spread of next-month percentage changes for the same three intervention groups, including variability and outliers.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-### 13.2c — Intervention score vs. change in cases next month
-
-Regression plot of monthly intervention score against next-month percentage change. Notebook output reports a correlation of −0.59.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-### 13.3 — United States: new cases and intervention score together
-
-For the United States, overlays a 7-day rolling average of new cases with a 7-day rolling average of government intervention score using two y-axes.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-### 13.4 — Cases per million by intervention level — violin plot
-
-Repeats the intervention-level comparison with a violin plot to expose distribution shape and density.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-
-## 🌍 Extra Charts
-
-### 14.1 — Monthly new cases by region
-
-Area chart of monthly summed `New_Cases` by region, showing how regional contributions change over time.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-### 14.2 — New cases per year by region
-
-Stacked yearly bars showing how each region contributes to annual new-case totals.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-### 14.3 — Pair plot — all relationships at once
-
-Uses a 500-row random sample of `New_Cases`, `New_Deaths`, `New_Recovered`, and `Government_Intervention_Score` to inspect pairwise relationships and distributions together.
-
-📌 **Reading guide:** focus on trends, differences, distribution shape, clustering, or relative contribution according to the chart type.
-
-
----
-
-# 🧠 Key Results Recorded in the Notebook
-
-## 📌 Final combined totals
-
-The notebook's final snapshot calculations report:
-
-| Metric | Result |
-|---|---:|
-| 🦠 Total cumulative cases | **295,511,950** |
-| 💚 Total cumulative recoveries | **249,533,663** |
-| ⚰️ Total cumulative deaths | **3,403,611** |
-| ✅ Recovery share of cases | **84.4%** |
-| ⚠️ Death share of cases | **1.15%** |
-
-These are the notebook's calculated totals for the final date represented in `last_day`.
-
-## 🥇 Country highlights
-
-The summary cell records:
-
-| Insight | Country |
-|---|---|
-| 🦠 Most total cases | **United States** |
-| 📏 Most cases per million | **United Kingdom** |
-| 📏 Fewest cases per million | **India** |
-
-## 🌍 Regional highlights
-
-Final cumulative cases by region:
-
-| Region | Cumulative cases |
-|---|---:|
-| 🇪🇺 Europe | **87,247,093** |
-| 🇺🇸 North America | **85,269,626** |
-| 🇮🇳 Asia | **68,922,043** |
-| 🇧🇷 South America | **47,133,678** |
-| 🇦🇺 Oceania | **6,939,510** |
-
-The notebook's summary identifies **Europe** as the region with the most cumulative cases.
-
----
-
-# 🏛️ Government Intervention Analysis
-
-This part of the notebook goes beyond simple visualization and creates a small observational analysis pipeline.
-
-## 1️⃣ Intervention-level averages
-
-The notebook computes:
+The notebook groups the dataset by date:
 
 ```python
-avg_cases = df.groupby('Intervention_Level')['Cases_per_Million'].mean()
+daily = df.groupby('Date')[[
+    'New_Cases',
+    'New_Recovered',
+    'New_Deaths'
+]].sum()
 ```
 
-This is a direct comparison of average daily cases per million across the predefined Low / Medium / High score bands.
+### What this chart shows
 
-## 2️⃣ Next-month analysis
+Three time-series panels display:
 
-The notebook first creates monthly country-level averages for:
+- 🦠 New cases
+- 💚 New recoveries
+- ⚰️ New deaths
+
+The values are summed across all 10 countries for each date.
+
+### 🎯 Why it is useful
+
+It provides a high-level view of how the three daily measures change over the complete observation period.
+
+---
+
+## 1.2 📅 Average daily new cases per month
+
+The notebook groups by `Year_Month` and `Country` and calculates the mean of `New_Cases`.
+
+### What this chart shows
+
+Each country gets its own line, allowing month-by-month comparison.
+
+### 🎯 Why it is useful
+
+It reduces daily noise and makes it easier to compare monthly patterns across countries.
+
+---
+
+## 1.3 🦠 Cumulative COVID-19 cases
+
+The notebook uses:
+
+```python
+sns.lineplot(
+    x='Date',
+    y='Cumulative_Cases',
+    hue='Country',
+    data=df
+)
+```
+
+### What this chart shows
+
+The accumulated case count for every country over time.
+
+### 🎯 Why it is useful
+
+It highlights the overall growth of cumulative cases rather than day-to-day changes.
+
+---
+
+## 1.4 ⚰️ Cumulative COVID-19 deaths
+
+This visualization tracks:
+
+```text
+Date → Cumulative_Deaths
+```
+
+with one line per country.
+
+### 🎯 Why it is useful
+
+It helps compare how cumulative deaths evolve over the observation period.
+
+---
+
+## 1.5 💉 Cumulative vaccine doses
+
+The notebook plots:
+
+```text
+Date → Cumulative_Vaccinations
+```
+
+for every country.
+
+### 🎯 Why it is useful
+
+It provides a visual view of vaccination accumulation over time.
+
+---
+
+# 📊 Visualization 2 — Bar Charts
+
+The updated notebook contains **5 bar-chart comparisons**.
+
+## 2.1 🦠 Total COVID-19 cases by country
+
+Uses the final-date values from:
+
+```python
+last_day['Cumulative_Cases']
+```
+
+### 🎯 Purpose
+
+Compare final cumulative case totals across the 10 countries.
+
+---
+
+## 2.2 ⚰️ Total deaths by country
+
+Uses:
+
+```python
+last_day['Cumulative_Deaths']
+```
+
+### 🎯 Purpose
+
+Compare final cumulative deaths across countries.
+
+---
+
+## 2.3 💚 Total recoveries by country
+
+Uses a horizontal bar chart for:
+
+```python
+last_day['Cumulative_Recovered']
+```
+
+### 🎯 Purpose
+
+The horizontal orientation makes country labels easier to read while comparing cumulative recoveries.
+
+---
+
+## 2.4 📏 Total cases per million people
+
+The notebook calculates:
+
+```python
+cases_per_million = (
+    last_day['Cumulative_Cases']
+    / last_day['Population']
+    * 1000000
+)
+```
+
+### 🎯 Purpose
+
+This gives a population-normalized final case comparison.
+
+### 📌 Final-date values recorded by the notebook data
+
+| Country | Cases per million |
+|---|---:|
+| 🇦🇺 Australia | 266,904.23 |
+| 🇧🇷 Brazil | 221,284.87 |
+| 🇨🇦 Canada | 271,268.00 |
+| 🇫🇷 France | 350,443.72 |
+| 🇩🇪 Germany | 247,398.99 |
+| 🇮🇳 India | 38,372.29 |
+| 🇮🇹 Italy | 300,750.65 |
+| 🇯🇵 Japan | 127,746.31 |
+| 🇬🇧 United Kingdom | 370,712.91 |
+| 🇺🇸 United States | 226,469.61 |
+
+The notebook summary identifies:
+
+> 🥇 **Highest cases per million: United Kingdom**  
+> 🟢 **Lowest cases per million: India**
+
+---
+
+## 2.5 🌍 Total cases by region
+
+The notebook calculates:
+
+```python
+region_cases = last_day.groupby('Region')['Cumulative_Cases'].sum()
+```
+
+### Final regional totals
+
+| Region | Total cumulative cases |
+|---|---:|
+| 🇪🇺 Europe | **87,247,093** |
+| 🌎 North America | **85,269,626** |
+| 🌏 Asia | **68,922,043** |
+| 🌎 South America | **47,133,678** |
+| 🌊 Oceania | **6,939,510** |
+
+### 🥇 Highest region
+
+The notebook records:
+
+> **Europe** as the region with the most cases.
+
+---
+
+# 🥧 Visualization 3 — Pie Charts
+
+The project contains **3 composition charts**.
+
+## 3.1 🌍 Share of total cases by region
+
+Uses the regional totals from `region_cases`.
+
+### 🎯 Purpose
+
+Shows how the total final-date case count is distributed among the five regions.
+
+---
+
+## 3.2 ⚰️ Share of total deaths by country
+
+Uses:
+
+```python
+last_day['Cumulative_Deaths']
+```
+
+### 🎯 Purpose
+
+Shows each country's share of the combined final-date deaths.
+
+---
+
+## 3.3 🔄 What happened to all the cases?
+
+The notebook combines:
+
+```python
+recovered = last_day['Cumulative_Recovered'].sum()
+active = last_day['Active_Cases'].sum()
+deaths = last_day['Cumulative_Deaths'].sum()
+```
+
+and displays:
+
+- 💚 Recovered
+- 🟠 Active
+- ❤️ Deaths
+
+### 🎯 Purpose
+
+Provides a composition-style view of the final case outcomes across the 10-country snapshot.
+
+---
+
+# 🔵 Visualization 4 — Scatter Plots
+
+The updated notebook includes **3 scatter plots**.
+
+## 4.1 🔗 Daily new cases vs. daily new deaths
+
+```python
+sns.scatterplot(
+    x='New_Cases',
+    y='New_Deaths',
+    hue='Region',
+    data=df,
+    alpha=0.5
+)
+```
+
+### 🎯 Purpose
+
+Explore the relationship between daily new cases and daily new deaths, while distinguishing observations by region.
+
+---
+
+## 4.2 👥 Population vs. total cases
+
+This plot uses the final snapshot:
+
+```python
+sns.scatterplot(
+    x='Population',
+    y='Cumulative_Cases',
+    hue='Country',
+    s=200,
+    data=last_day
+)
+```
+
+### 🎯 Purpose
+
+Explore how final population size relates to cumulative case totals.
+
+---
+
+## 4.3 🏛️ Government intervention score vs. cases per million
+
+The notebook takes a reproducible sample:
+
+```python
+sample = df.sample(2000, random_state=1)
+```
+
+and compares:
+
+```text
+Government_Intervention_Score
+vs.
+Cases_per_Million
+```
+
+### 🎯 Purpose
+
+Explore whether visible patterns exist between intervention scores and population-normalized daily cases.
+
+---
+
+# 📦 Visualization 5 — Histograms
+
+The project includes **2 histograms**.
+
+## 5.1 📊 Distribution of daily new cases
+
+Uses 40 bins for `New_Cases`.
+
+### 🎯 Purpose
+
+Understand the spread and frequency of daily case values across the dataset.
+
+---
+
+## 5.2 ⚖️ Distribution of case fatality rate
+
+Uses:
+
+```python
+sns.histplot(
+    df['Case_Fatality_Rate_Percent'],
+    bins=30,
+    kde=True
+)
+```
+
+### 🎯 Purpose
+
+Show the distribution of case fatality rates and its density shape.
+
+---
+
+# 📦 Visualization 6 — Box Plots
+
+The project uses **3 box plots**.
+
+## 6.1 🌍 Daily new cases by country
+
+### 🎯 Purpose
+
+Compare:
+
+- Median
+- Spread
+- Variability
+- Potential outliers
+
+of `New_Cases` across countries.
+
+---
+
+## 6.2 ⚖️ Case fatality rate by country
+
+Compares the distribution of:
+
+```text
+Case_Fatality_Rate_Percent
+```
+
+for each country.
+
+---
+
+## 6.3 🏛️ Cases per million by intervention level
+
+Compares `Cases_per_Million` across:
+
+- 🟢 Low
+- 🟠 Medium
+- 🔴 High
+
+intervention categories.
+
+---
+
+# 🔥 Visualization 7 — Heatmaps
+
+The updated notebook contains **3 heatmaps**.
+
+## 7.1 🔥 Correlation heatmap
+
+The notebook examines correlations among:
+
+```python
+[
+    'New_Cases',
+    'New_Recovered',
+    'New_Deaths',
+    'Active_Cases',
+    'New_Vaccinations',
+    'Government_Intervention_Score',
+    'Case_Fatality_Rate_Percent',
+    'Recovery_Rate_Percent'
+]
+```
+
+### 🎯 Purpose
+
+Quickly inspect pairwise linear relationships among the major numerical variables.
+
+---
+
+## 7.2 📅 Average daily cases per million — Country vs Year
+
+A pivot table is created using:
+
+```python
+df.pivot_table(
+    index='Country',
+    columns='Year',
+    values='Cases_per_Million',
+    aggfunc='mean'
+)
+```
+
+### 🎯 Purpose
+
+Compare average population-normalized daily cases across countries and years.
+
+---
+
+## 7.3 🏛️ Average government intervention score — Country vs Year
+
+The notebook creates a country-by-year pivot table of average intervention scores.
+
+### 🎯 Purpose
+
+Compare intervention intensity across countries and years in one compact matrix.
+
+---
+
+# 📅 Special Analysis — What Happened to Cases in the Next Month?
+
+One of the most interesting parts of the updated notebook is its **next-month analysis**.
+
+## 1️⃣ Monthly aggregation
+
+The notebook calculates country-level monthly averages for:
 
 - `New_Cases`
 - `Government_Intervention_Score`
 
-Then it shifts the case series so that each month is compared with the **next month** for the same country:
-
 ```python
-monthly['Cases_Next_Month'] = monthly.groupby('Country')['New_Cases'].shift(-1)
+monthly = df.groupby(
+    ['Country', 'Year_Month']
+)[
+    ['New_Cases', 'Government_Intervention_Score']
+].mean().reset_index()
 ```
 
-The percentage change is:
+## 2️⃣ Find the next month's cases
+
+```python
+monthly['Cases_Next_Month'] = (
+    monthly.groupby('Country')['New_Cases'].shift(-1)
+)
+```
+
+This compares each country-month with its following month.
+
+## 3️⃣ Calculate percentage change
 
 ```python
 monthly['Change_Percent'] = (
     (monthly['Cases_Next_Month'] - monthly['New_Cases'])
-    / monthly['New_Cases'] * 100
+    / monthly['New_Cases']
+    * 100
 )
 ```
 
-The intervention score is then split into **three equal-frequency groups** with:
+## 4️⃣ Create three equal-frequency intervention groups
 
 ```python
-pd.qcut(..., 3, labels=['Low', 'Medium', 'High'])
+monthly['Level'] = pd.qcut(
+    monthly['Government_Intervention_Score'],
+    3,
+    labels=['Low', 'Medium', 'High']
+)
 ```
 
-### 📉 Recorded mean next-month changes
+> ⚠️ These **Low / Medium / High groups are quantile-based** for this analysis. They are different from the earlier fixed score bins of 0–30, 31–60, and 61–100.
 
-| Intervention group | Mean change in next-month cases |
-|---|---:|
-| 🟢 Low | **+28.73%** |
-| 🟠 Medium | **+5.56%** |
-| 🔴 High | **−13.18%** |
+## 5️⃣ Remove months with no next month
 
-The same calculation also records these medians:
+The final month of each country cannot have a next-month comparison, so the notebook removes those rows:
 
-| Intervention group | Median change |
-|---|---:|
-| 🟢 Low | **+32.64%** |
-| 🟠 Medium | **+4.93%** |
-| 🔴 High | **−21.03%** |
-
-### 🔗 Intervention score vs. next-month change
-
-The notebook reports a correlation of:
-
-> **−0.59**
-
-This indicates a **moderately negative linear association in this dataset** between the intervention score and the next-month percentage change in cases.
-
-⚠️ **Important interpretation note:** this notebook is exploratory and observational. A negative correlation or a lower average change at higher intervention levels should **not** be presented as proof of causation. Many other factors can influence case counts.
+```python
+monthly = monthly.dropna()
+```
 
 ---
 
-# 🧪 Statistical / Exploratory Techniques Used
+# 📊 Next-Month Results
 
-This project combines several complementary visualization methods:
+The notebook records the following group statistics:
 
-| Technique | Main purpose |
+| Intervention level | Mean change next month | Median change next month |
+|---|---:|---:|
+| 🟢 Low | **+28.73%** | **+32.64%** |
+| 🟠 Medium | **+5.56%** | **+4.93%** |
+| 🔴 High | **−13.18%** | **−21.03%** |
+
+### 📌 How to read this result
+
+In this notebook's dataset:
+
+- Low-intervention months are associated with a **positive average change** into the next month.
+- Medium-intervention months show a **smaller positive average change**.
+- High-intervention months show a **negative average change**.
+
+### ⚠️ Important
+
+This is an **exploratory observational analysis**. It does not by itself establish that intervention scores caused the subsequent change in cases.
+
+---
+
+# 📋 Summary Numbers from the Notebook
+
+The final summary cell records:
+
+| Metric | Result |
+|---|---:|
+| 🦠 Total cumulative cases | **295,511,950** |
+| 💚 Total recoveries | **249,533,663** |
+| ⚰️ Total deaths | **3,403,611** |
+| ✅ Recoveries as share of cases | **84.4%** |
+| ⚠️ Deaths as share of cases | **1.15%** |
+| 🥇 Most total cases | **United States** |
+| 📏 Most cases per million | **United Kingdom** |
+| 📏 Fewest cases per million | **India** |
+| 🌍 Region with most cases | **Europe** |
+
+---
+
+# 📅 Observation Period
+
+The notebook starts with observations dated:
+
+**01-01-2020**
+
+With 1,000 daily observations per country in the 10,000-row dataset, the displayed dataset spans through:
+
+**26-09-2022**
+
+The final country snapshot in the notebook is therefore based on that maximum date.
+
+---
+
+# 🧪 Exploratory Analysis Techniques Used
+
+This updated project demonstrates a broad range of practical EDA techniques:
+
+| Technique | Used for |
 |---|---|
-| 📈 Line chart | Time trends |
-| 📊 Bar chart | Category comparison |
-| 🥧 Pie chart | Share / composition |
-| 🔵 Scatter plot | Relationship between variables |
-| 📦 Histogram | Distribution of a variable |
-| 📦 Box plot | Median, spread, outliers |
-| 🎻 Violin plot | Distribution + density |
-| 🔥 Heatmap | Correlation / matrix comparisons |
-| 🟦 Area chart | Stacked/continuous regional contribution |
-| 🧩 Pair plot | Multiple pairwise relationships |
-
-Using many chart families is useful because no single plot reveals every aspect of a dataset.
+| 🧹 Data cleaning | Preparing reliable analysis columns |
+| 🗓️ Date feature engineering | Year, month, monthly periods |
+| 👥 Population normalization | Cases per million, deaths per million |
+| 🏛️ Categorization | Intervention-level grouping |
+| 📈 Time-series analysis | Daily, monthly and cumulative trends |
+| 📊 Aggregation | Country and regional summaries |
+| 🔵 Relationship analysis | Scatter plots |
+| 📦 Distribution analysis | Histograms and box plots |
+| 🔥 Correlation analysis | Heatmap |
+| 📅 Lag analysis | Next-month case change |
+| 📐 Pivot tables | Country/year comparisons |
 
 ---
 
-# 🔍 What Makes This Project Useful?
+# 🧠 Main Project Takeaways
 
-### 📚 Learning value
+### 🌍 Country comparison
 
-This notebook is a strong practice project for learning:
+The notebook's final snapshot shows that the **United States** has the highest total cumulative cases among the 10 countries analyzed.
 
-- Pandas grouping and aggregation
-- Date/time feature engineering
-- Population normalization
-- Categorical binning
-- Data visualization with Matplotlib
-- Statistical visualization with Seaborn
-- Correlation analysis
-- Pivot tables and heatmaps
-- Rolling averages
-- Simple regression/trend-line visualization
-- Exploratory analysis across countries and regions
+### 📏 Population-normalized comparison
 
-### 💼 Portfolio value
+When cumulative cases are divided by population and scaled per million people, the **United Kingdom** ranks highest while **India** ranks lowest in this dataset's final snapshot.
 
-It demonstrates a full exploratory data-analysis workflow instead of a single chart:
+### 🌎 Regional comparison
 
-**Data → Cleaning → Feature Engineering → Visualization → Comparison → Interpretation**
+**Europe** records the largest final cumulative case total among the five regions.
 
-### 🎨 Visualization variety
+### 🏛️ Intervention analysis
 
-The project intentionally uses a broad range of visual encodings so the same COVID-19 dataset can be examined from several angles.
+The next-month analysis shows a decreasing average case-change pattern from the Low group to the High group:
+
+```text
+Low       +28.73%  📈
+Medium     +5.56%  ↗️
+High      -13.18%  📉
+```
+
+Again, these are associations observed in the notebook's data and should not be treated as causal proof.
+
+---
+
+# ⚠️ Important Limitations
+
+This is an exploratory data-analysis project, so results should be interpreted with care.
+
+### 1. 🔎 Observational analysis
+
+The notebook identifies patterns and relationships. It does not establish causal effects.
+
+### 2. 🌍 Country differences
+
+Countries can differ in population structure, reporting practices, testing, healthcare systems, and many other factors.
+
+### 3. 📏 Per-million normalization
+
+Cases per million improves population comparability, but it does not eliminate other sources of cross-country difference.
+
+### 4. 📅 Monthly aggregation
+
+Monthly averages can hide short-term spikes and rapid changes.
+
+### 5. 🏛️ Two intervention definitions
+
+The notebook uses:
+
+- Fixed bins for the main `Intervention_Level`
+- Quantile groups using `pd.qcut()` for the next-month analysis
+
+These should not be interpreted as the same classification system.
+
+### 6. 📦 Dataset scope
+
+The README and conclusions describe the exact dataset represented in the updated notebook rather than assuming live or continuously updated external COVID-19 data.
 
 ---
 
 # ▶️ How to Run the Project
 
-## 1. Clone or download the project
+## 1. Install Python
 
-Place these files in the same project folder:
+Use Python 3.x.
 
-```text
-COVID-19-Project/
-├── Covid-19.ipynb
-├── COVID-19 Dataset.csv
-└── assets/
-    └── covid19_banner.gif
-```
-
-## 2. Install the required packages
+## 2. Install dependencies
 
 ```bash
 pip install numpy pandas matplotlib seaborn jupyter
 ```
 
-## 3. Launch Jupyter
+## 3. Keep the files together
+
+```text
+Covid-19(1).ipynb
+COVID-19 Dataset.csv
+README.md
+covid19_updated_banner.gif
+```
+
+## 4. Start Jupyter Notebook
 
 ```bash
 jupyter notebook
 ```
 
-## 4. Open the notebook
+## 5. Open the notebook
 
 Open:
 
 ```text
-Covid-19.ipynb
+Covid-19(1).ipynb
 ```
 
-## 5. Run all cells
+## 6. Run the notebook
 
-Make sure `COVID-19 Dataset.csv` is in the notebook's working directory before running the data-loading cell.
+Run all cells from top to bottom.
 
 ---
 
-# 🧭 Notebook Roadmap
+# 🗂️ Notebook Roadmap
 
 ```text
-01  Import libraries
-      ↓
-02  Load the dataset
-      ↓
-03  Understand the data
-      ↓
-04  Prepare the data
-      ↓
-05  Line charts
-      ↓
-06  Bar charts
-      ↓
-07  Pie charts
-      ↓
-08  Scatter plots
-      ↓
-09  Histograms
-      ↓
-10  Box plots
-      ↓
-11  Violin plots
-      ↓
-12  Heatmaps
-      ↓
-13  Impact of government interventions
-      ↓
-14  Extra charts
-      ↓
-15  Summary numbers
+📌 1. Import libraries
+        ↓
+📌 2. Load the dataset
+        ↓
+📌 3. Understand the data
+        ↓
+📌 4. Prepare the data
+        ↓
+📌 5. Line charts
+        ↓
+📌 6. Bar charts
+        ↓
+📌 Pie charts
+        ↓
+📌 Scatter plots
+        ↓
+📌 Histograms
+        ↓
+📌 Box plots
+        ↓
+📌 Heatmaps
+        ↓
+📌 Next-month intervention analysis
+        ↓
+📌 Summary numbers
 ```
 
 ---
 
-# 📈 Suggested Questions to Explore Further
+# 🚀 Future Improvements
 
-The notebook creates a strong base for additional analysis. Natural extensions include:
+This notebook can be extended into a larger data-science project with:
 
-- 🌎 Compare countries after adjusting for population and region.
-- 💉 Study the relationship between vaccinations and later case patterns.
-- ⚰️ Compare fatality and recovery metrics over time rather than only in distributions.
-- 📅 Add rolling 7-day or 14-day comparisons for more stable trend analysis.
-- 🏛️ Test lagged intervention effects using more formal time-series methods.
-- 📐 Add regression diagnostics and confidence intervals.
-- 🌍 Build an interactive dashboard with Plotly, Streamlit, or Power BI.
-
-These are extensions rather than results already established by the notebook.
-
----
-
-# ⚠️ Interpretation & Limitations
-
-This README documents what the notebook does; it does not add causal claims that are not established by the analysis.
-
-A few important limitations to keep in mind:
-
-1. **Observational data:** relationships between intervention scores and cases are associations, not automatic evidence of cause and effect.
-2. **Population normalization:** cases per million are useful for comparison, but they do not remove all differences in testing, reporting, healthcare systems, or demographic structure.
-3. **Aggregated monthly analysis:** next-month analysis uses monthly averages, which can hide short-term variation.
-4. **Equal-frequency intervention grouping:** the `qcut` analysis creates Low / Medium / High groups based on the distribution of observed scores, so those groups are different from the fixed 0–30 / 31–60 / 61–100 bins used earlier.
-5. **Final snapshot dependence:** country ranking summaries are based on the dataset's maximum date selected by `last_day`.
-6. **Dataset provenance:** this notebook does not document an external source or live-update mechanism for the CSV, so the numbers should be treated as the values present in the project dataset.
+- 📊 Interactive Plotly dashboards
+- 🌐 Streamlit web application
+- 🗺️ Country-level map visualizations
+- 💉 Vaccination-rate analysis
+- 📅 7-day / 14-day rolling averages
+- 🔗 Lagged intervention analysis
+- 📐 Statistical regression models
+- 📈 Forecasting and time-series models
+- 🎛️ Interactive country and date filters
 
 ---
 
-# 💡 Project Takeaway
+# ⭐ Why This Project Is Portfolio-Friendly
 
-The project turns a 10,000-row COVID-19 dataset into a broad exploratory analysis covering **time trends, country comparisons, regional composition, population-normalized rates, distributions, correlations, intervention patterns, and outcome summaries**.
+This project is more than a collection of charts. It demonstrates a full workflow:
 
-The strongest portfolio feature is the combination of:
+```text
+📥 Data Loading
+      +
+🧹 Data Preparation
+      +
+🧮 Feature Engineering
+      +
+📊 Exploratory Visualization
+      +
+🌍 Country/Region Comparison
+      +
+🔗 Relationship Analysis
+      +
+🏛️ Intervention Analysis
+      +
+📝 Summary & Interpretation
+```
 
-> 🧹 **Data preparation**  
-> + 📊 **39 visualizations**  
-> + 🧠 **exploratory interpretation**  
-> + 🏛️ **government-intervention analysis**  
-> + 📝 **summary metrics**
+That makes it suitable as a **Python / Data Analysis / EDA portfolio project**.
 
 ---
 
-# 🎥 Video Demo
+# 💡 Quick Project Highlights
 
-🔗 **Video Demo:** [Add your video demo link here](YOUR_VIDEO_LINK_HERE)
+<div align="center">
 
+| 📊 Dataset | 🌍 Coverage | 📈 Visualizations | 🏛️ Special Analysis |
+|---|---:|---:|---|
+| 10,000 rows | 10 countries / 5 regions | 26 plots | Next-month intervention analysis |
+
+</div>
+
+---
+
+# 🎥 Demo Video Placeholder
+
+### ▶️ Project Demonstration
+
+Paste your video URL below:
+
+```text
+YOUR_VIDEO_LINK_HERE
+```
+
+Example Markdown:
+
+```markdown
+[🎥 Watch the COVID-19 Project Demo](YOUR_VIDEO_LINK_HERE)
+```
 
 ---
 
 # 🙌 Credits
 
-Built as a **COVID-19 Data Analysis and Visualization** project using Python's data-analysis and visualization ecosystem.
+This project was created as a **COVID-19 Data Analysis and Visualization** study using Python's data-analysis and visualization ecosystem.
 
 <div align="center">
 
-### 🚀 Keep Exploring Data. Keep Learning. Keep Visualizing. 🚀
+### 🐍 Python • 🐼 Pandas • 🔢 NumPy • 📊 Matplotlib • 🎨 Seaborn
 
-**Made with ❤️, 🐍 Python, 📊 Pandas, 🎨 Matplotlib & 🌈 Seaborn**
+### 🚀 Keep Exploring Data. Keep Learning. Keep Visualizing.
 
-### **Nihar Sheladiya**
+# **Nihar Sheladiya** ❤️
+
+</div>
+
+---
+
+<div align="center">
+
+### 🦠📊 COVID-19 DATA ANALYSIS • EXPLORE • VISUALIZE • UNDERSTAND 📊🦠
 
 </div>
