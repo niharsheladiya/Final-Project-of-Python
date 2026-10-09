@@ -64,7 +64,7 @@ The whole analysis lives in a single, well-organized Jupyter Notebook, with each
 <div align="center">
 
 
-🔗 **Video Link:** `PASTE_YOUR_VIDEO_LINK_HERE`
+🔗 **Video Link:** `https://drive.google.com/file/d/10bqrgYS7KLUyRhHTE8pKI1RaBUkLah_1/view?usp=sharing`
 
 </div>
 
