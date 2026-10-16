@@ -63,8 +63,13 @@ The whole analysis lives in a single, well-organized Jupyter Notebook, with each
 
 <div align="center">
 
+<a href="https://drive.google.com/file/d/10bqrgYS7KLUyRhHTE8pKI1RaBUkLah_1/preview">
+  <img src="https://img.shields.io/badge/%E2%96%B6%20Watch%20Video%20Demo-Click%20to%20Play-f43f5e?style=for-the-badge&logo=googledrive&logoColor=white" alt="Watch Video Demo"/>
+</a>
 
-🔗 **Video Link:** `https://drive.google.com/file/d/10bqrgYS7KLUyRhHTE8pKI1RaBUkLah_1/view?usp=sharing`
+<br/><br/>
+
+🔗 **Video Link:** [Click here to watch the video](https://drive.google.com/file/d/10bqrgYS7KLUyRhHTE8pKI1RaBUkLah_1/preview)
 
 </div>
 
